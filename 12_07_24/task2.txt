@@ -1,0 +1,1 @@
+Make a simple component using ng module and Standalone:true. Check the difference between two and observe why the new way is better.
