@@ -1,1 +1,18 @@
 1. Project 1 from JavaScript 30 projects
+
+Created Project 1 ---> JS Drum Kit
+
+Features used..
+1.JavaScript
+   1.1 Event Listener-a function in JavaScript that waits for an event to occur then responds to it.
+   1.2 QuerySelector-
+   1.3 QuerySelectorAll- to select a group of elements in the Document Object Model (DOM) based on a CSS selector
+   1.4 Functions
+2.HTML
+    2.1 audio
+    2.2 kbd-The <kbd> tag is used to define keyboard input
+3.CSS
+    3.1 transition - transforms move or change the appearance of an element, 
+    3.2 transform -CSS transform property you can rotate, move, skew, and scale elements.
+                    transforms move or change the appearance of an element, 
+                    
