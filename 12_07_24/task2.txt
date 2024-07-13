@@ -1,1 +1,48 @@
-Make a simple component using ng module and Standalone:true. Check the difference between two and observe why the new way is better.
+/*Make a simple component using ng module and Standalone:true.
+ Check the difference between two and observe why the new way is better.*/
+
+
+Note: -----> So in summary, NgModules are tailored for browser development workflow while 
+standalone packaging focuses on delivering fully self-contained applications 
+for native desktop/mobile deployment.
+
+//---->  Standalone
+@Component({
+  selector: "app-standalone",
+  template: `I'm a standalone component `,
+  standalone: true,
+  // Import the NgModule that declares the component
+  imports: [MyModule], 
+})
+export class StandaloneComponent {
+}
+//---> NgModule
+
+
+@NgModule({
+  declarations: [TraditionalComponent],
+  // export the NgModule-based component
+  exports: [TraditionalComponent], 
+})
+export class MyModule {
+
+}
+
+
+ 1. @ngModule
+Used for building Angular applications that run in the browser.
+Modules help organize code into functional units and provide runtime context.
+Modules load and run within the context of a browser.
+Components, directives, pipes declare within modules.
+Imports/exports allow incremental loading and hierarchical organization.
+
+2.Standalone:true
+Target non-browser platforms like desktop, mobile, servers etc.
+Bundle application and dependencies into self-contained packages.
+Compile to executable files rather than scripts for browsers.
+No direct notion of modules - entire application bundled together.
+Need to manage imports/dependencies at bundling/packaging level.
+
+
+
+
